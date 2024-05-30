@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Samochody</title>
+    <style>
+        .incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz: Samochody</h1>
+    <form id="quizForm" onsubmit="return false;">
+        <ol>
+            <!-- Pytania -->
+            <li>
+                <h2>Kto założył pierwszą masową firmę produkującą samochody?</h2>
+                <input type="radio" name="question1" value="a"> a) Henry Ford<br>
+                <input type="radio" name="question1" value="b"> b) Karl Benz<br>
+                <input type="radio" name="question1" value="c"> c) Ferdinand Porsche<br>
+                <input type="radio" name="question1" value="d"> d) Gottlieb Daimler<br>
+            </li>
+            <li>
+                <h2>Który samochód był pierwszym modelem produkowanym przez Forda w 1908 roku?</h2>
+                <input type="radio" name="question2" value="a"> a) Ford Model A<br>
+                <input type="radio" name="question2" value="b"> b) Ford Model T<br>
+                <input type="radio" name="question2" value="c"> c) Ford Model B<br>
+                <input type="radio" name="question2" value="d"> d) Ford Model C<br>
+            </li>
+            <li>
+                <h2>Jak nazywa się najbardziej popularny samochód osobowy na świecie?</h2>
+                <input type="radio" name="question3" value="a"> a) Toyota Corolla<br>
+                <input type="radio" name="question3" value="b"> b) Volkswagen Golf<br>
+                <input type="radio" name="question3" value="c"> c) Ford Focus<br>
+                <input type="radio" name="question3" value="d"> d) Honda Civic<br>
+            </li>
+            <li>
+                <h2>Który samochód był pierwszym produkowanym seryjnie z silnikiem elektrycznym?</h2>
+                <input type="radio" name="question4" value="a"> a) Tesla Roadster<br>
+                <input type="radio" name="question4" value="b"> b) Nissan Leaf<br>
+                <input type="radio" name="question4" value="c"> c) Chevrolet Volt<br>
+                <input type="radio" name="question4" value="d"> d) Toyota Prius<br>
+            </li>
+            <li>
+                <h2>Jak nazywa się najdroższy samochód na świecie?</h2>
+                <input type="radio" name="question5" value="a"> a) Bugatti Veyron<br>
+                <input type="radio" name="question5" value="b"> b) Koenigsegg Jesko Absolut<br>
+                <input type="radio" name="question5" value="c"> c) Lamborghini Veneno<br>
+                <input type="radio" name="question5" value="d"> d) Rolls-Royce Sweptail<br>
+            </li>
+            <li>
+                <h2>Która marka samochodów jest znana z modeli takich jak Phantom, Ghost i Wraith?</h2>
+                <input type="radio" name="question6" value="a"> a) Rolls-Royce<br>
+                <input type="radio" name="question6" value="b"> b) Bentley<br>
+                <input type="radio" name="question6" value="c"> c) Aston Martin<br>
+                <input type="radio" name="question6" value="d"> d) Lamborghini<br>
+            </li>
+            <li>
+                <h2>Jak nazywa się samochód sportowy zaprojektowany przez Ferruccio Lamborghini?</h2>
+                <input type="radio" name="question7" value="a"> a) Diablo<br>
+                <input type="radio" name="question7" value="b"> b) Murciélago<br>
+                <input type="radio" name="question7" value="c"> c) Countach<br>
+                <input type="radio" name="question7" value="d"> d) Miura<br>
+            </li>
+            <li>
+                <h2>Który samochód zdobył tytuł "Car of the Year" w 2020 roku?</h2>
+                <input type="radio" name="question8" value="a"> a) Toyota Corolla<br>
+                <input type="radio" name="question8" value="b"> b) Volkswagen Golf<br>
+                <input type="radio" name="question8" value="c"> c) Kia Telluride<br>
+                <input type="radio" name="question8" value="d"> d) Tesla Model 3<br>
+            </li>
+            <li>
+                <h2>Która firma samochodowa jest znana ze swoich luksusowych limuzyn, takich jak S-Class i E-Class?</h2>
+                <input type="radio" name="question9" value="a"> a) Mercedes-Benz<br>
+                <input type="radio" name="question9" value="b"> b) BMW<br>
+                <input type="radio" name="question9" value="c"> c) Audi<br>
+                <input type="radio" name="question9" value="d"> d) Lexus<br>
+            </li>
+            <li>
+                <h2>Jakie jest przyspieszenie zerowe (0-100 km/h) dla Bugatti Chiron?</h2>
+                <input type="radio" name="question10" value="a"> a) Poniżej 2 sekund<br>
+                <input type="radio" name="question10" value="b"> b) Około 2,5 sekundy<br>
+                <input type="radio" name="question10" value="c"> c) Około 3 sekundy<br>
+                <input type="radio" name="question10" value="d"> d) Powyżej 3,5 sekundy<br>
+            </li>
+            <li>
+                <h2>Który samochód był modelem Jamesa Bonda w filmie "Złoty Oczy" (GoldenEye)?</h2>
+                <input type="radio" name="question11" value="a"> a) Aston Martin DB5<br>
+                <input type="radio" name="question11" value="b"> b) Lotus Esprit<br>
+                <input type="radio" name="question11" value="c"> c) BMW Z8<br>
+                <input type="radio" name="question11" value="d"> d) Aston Martin Vanquish<br>
+            </li>
+            <li>
+                <h2>Jak nazywa się samochód, który był bohaterem filmu "Transformers", transformując się w robota o imieniu Bumblebee?</h2>
+                <input type="radio" name="question12" value="a"> a) Chevrolet Camaro<br>
+                <input type="radio" name="question12" value="b"> b) Ford Mustang<br>
+                <input type="radio" name="question12" value="c"> c) Dodge Challenger<br>
+                <input type="radio" name="question12" value="d"> d) Nissan GT-R<br>
+            </li>
+            <li>
+                <h2>Która marka samochodów jest znana z modeli takich jak Civic, Accord i CR-V?</h2>
+                <input type="radio" name="question13" value="a"> a) Honda<br>
+                <input type="radio" name="question13" value="b"> b) Toyota<br>
+                <input type="radio" name="question13" value="c"> c) Subaru<br>
+                <input type="radio" name="question13" value="d"> d) Hyundai<br>
+            </li>
+            <li>
+                <h2>Jak nazywa się samochód, który stał się ikoną kultury pop dzięki filmowi "Powrót do przyszłości"?</h2>
+                <input type="radio" name="question14" value="a"> a) DeLorean DMC-12<br>
+                <input type="radio" name="question14" value="b"> b) Chevrolet Corvette<br>
+                <input type="radio" name="question14" value="c"> c) Pontiac Firebird<br>
+                <input type="radio" name="question14" value="d"> d) Plymouth Barracuda<br>
+            </li>
+            <li>
+                <h2>Która firma samochodowa produkowała samochody z motorem w układzie Wankla?</h2>
+                <input type="radio" name="question15" value="a"> a) Mazda<br>
+                <input type="radio" name="question15" value="b"> b) Mitsubishi<br>
+                <input type="radio" name="question15" value="c"> c) Subaru<br>
+                <input type="radio" name="question15" value="d"> d) Suzuki<br>
+            </li>
+            <li>
+                <h2>Który samochód był pierwszym seryjnie produkowanym modelem hybrydowym?</h2>
+                <input type="radio" name="question16" value="a"> a) Toyota Prius<br>
+                <input type="radio" name="question16" value="b"> b) Honda Insight<br>
+                <input type="radio" name="question16" value="c"> c) Chevrolet Volt<br>
+                <input type="radio" name="question16" value="d"> d) Nissan Leaf<br>
+            </li>
+            <li>
+                <h2>Jak nazywa się samochód, który jest symbolem kultury amerykańskiej, znany również jako "Ponycar"?</h2>
+                <input type="radio" name="question17" value="a"> a) Ford Mustang<br>
+                <input type="radio" name="question17" value="b"> b) Chevrolet Camaro<br>
+                <input type="radio" name="question17" value="c"> c) Dodge Challenger<br>
+                <input type="radio" name="question17" value="d"> d) Pontiac Firebird<br>
+            </li>
+            <li>
+                <h2>Która marka samochodów jest znana z modeli takich jak 911, Cayenne i Panamera?</h2>
+                <input type="radio" name="question18" value="a"> a) Porsche<br>
+                <input type="radio" name="question18" value="b"> b) Ferrari<br>
+                <input type="radio" name="question18" value="c"> c) Lamborghini<br>
+                <input type="radio" name="question18" value="d"> d) McLaren<br>
+            </li>
+            <li>
+                <h2>Jak nazywa się największy producent samochodów elektrycznych na świecie?</h2>
+                <input type="radio" name="question19" value="a"> a) Tesla<br>
+                <input type="radio" name="question19" value="b"> b) Nissan<br>
+                <input type="radio" name="question19" value="c"> c) Chevrolet<br>
+                <input type="radio" name="question19" value="d"> d) BMW<br>
+            </li>
+            <li>
+                <h2>Który samochód był pierwszym modelem produkowanym przez Volkswagena?</h2>
+                <input type="radio" name="question20" value="a"> a) Volkswagen Beetle<br>
+                <input type="radio" name="question20" value="b"> b) Volkswagen Golf<br>
+                <input type="radio" name="question20" value="c"> c) Volkswagen Passat<br>
+                <input type="radio" name="question20" value="d"> d) Volkswagen Type 2 (Transporter)<br>
+            </li>
+        </ol>
+        <button onclick="submitQuiz()">Sprawdź odpowiedzi</button>
+    </form>
+    <div id="quizResults"></div>
+
+    <script>
+        function submitQuiz() {
+            const quizForm = document.getElementById('quizForm');
+            const formData = new FormData(quizForm);
+            let score = 0;
+
+            for (const pair of formData.entries()) {
+                const questionNumber = pair[0].slice(-1);
+                const answer = pair[1];
+
+                // Sprawdź odpowiedzi
+                switch (questionNumber) {
+                    case '1':
+                        if (answer === 'a') score++;
+                        break;
+                    case '2':
+                        if (answer === 'b') score++;
+                        break;
+                    case '3':
+                        if (answer === 'a') score++;
+                        break;
+                    case '4':
+                        if (answer === 'a') score++;
+                        break;
+                    case '5':
+                        if (answer === 'd') score++;
+                        break;
+                    case '6':
+                        if (answer === 'a') score++;
+                        break;
+                    case '7':
+                        if (answer === 'd') score++;
+                        break;
+                    case '8':
+                        if (answer === 'c') score++;
+                        break;
+                    case '9':
+                        if (answer === 'a') score++;
+                        break;
+                    case '10':
+                        if (answer === 'a') score++;
+                        break;
+                    case '11':
+                        if (answer === 'a') score++;
+                        break;
+                    case '12':
+                        if (answer === 'a') score++;
+                        break;
+                    case '13':
+                        if (answer === 'a') score++;
+                        break;
+                    case '14':
+                        if (answer === 'a') score++;
+                        break;
+                    case '15':
+                        if (answer === 'a') score++;
+                        break;
+                    case '16':
+                        if (answer === 'a') score++;
+                        break;
+                    case '17':
+                        if (answer === 'a') score++;
+                        break;
+                    case '18':
+                        if (answer === 'a') score++;
+                        break;
+                    case '19':
+                        if (answer === 'a') score++;
+                        break;
+                    case '20':
+                        if (answer === 'a') score++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            // Wyświetl wyniki
+            const quizResults = document.getElementById('quizResults');
+            quizResults.innerHTML = `Twój wynik: ${score} / 20`;
+
+            // Podświetl błędne odpowiedzi na czerwono
+            for (let i = 1; i <= 20; i++) {
+                const selectedAnswer = document.querySelector(`input[name="question${i}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value !== `a`) {
+                    selectedAnswer.parentNode.classList.add('incorrect');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
